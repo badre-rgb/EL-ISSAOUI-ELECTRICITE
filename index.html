@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QCM interactif de physique-chimie sur les dipôles RC, RL et les circuits RLC.">
+  <title>Index | QCM RC, RL et RLC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">ϟ</span><span>PHYSIQUE <b>&</b> CHIMIE</span></div>
+    <span class="teacher">Prof. Hamza El Issaoui</span>
+  </header>
+  <main class="app">
+    <section class="intro">
+      <div class="eyebrow">2 BAC · SCIENCES PHYSIQUES</div>
+      <h1>Dipôles <span>RC · RL · RLC</span></h1>
+      <p>QCM de révision — 100 questions directes fondées sur le cours.</p>
+      <div class="chips"><span>100 questions</span><span>3 chapitres</span><span>Correction finale</span></div>
+    </section>
+    <section class="quiz-card" id="quiz">
+      <div class="quiz-head">
+        <div><span class="muted-label">QUESTION</span><div class="counter"><strong id="current">1</strong><span> / 100</span></div></div>
+        <div class="score-box"><span class="muted-label">SCORE</span><strong id="score">0</strong></div>
+      </div>
+      <div class="progress-track"><div class="progress-bar" id="progress"></div></div>
+      <div class="question-meta"><span id="chapterTag">DIPÔLE RC</span><span id="answeredTag">0 réponse validée</span></div>
+      <h2 id="questionText">Chargement…</h2>
+      <div class="answers" id="answers"></div>
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+      <div class="actions">
+        <button class="btn btn-ghost" id="prevBtn" type="button">← Précédente</button>
+        <button class="btn btn-primary" id="checkBtn" type="button">Valider la réponse</button>
+        <button class="btn btn-primary hidden" id="nextBtn" type="button">Suivante →</button>
+      </div>
+    </section>
+    <section class="result-card hidden" id="result">
+      <div class="result-icon">✓</div><div class="eyebrow">QCM TERMINÉ</div>
+      <h2>Votre résultat</h2>
+      <div class="final-score"><strong id="finalScore">0/100</strong><span id="percentage">0 %</span></div>
+      <p id="resultMessage"></p>
+      <div class="result-actions">
+        <button class="btn btn-primary" id="reviewBtn" type="button">Voir les corrections</button>
+        <button class="btn btn-ghost" id="restartBtn" type="button">Recommencer</button>
+      </div>
+      <div id="reviewList" class="review-list hidden"></div>
+    </section>
+    <footer>Projet pédagogique · <strong>Prof. Hamza El Issaoui</strong></footer>
+  </main>
+</body>
+</html>
